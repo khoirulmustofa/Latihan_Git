@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sitimufida.calculatorandroid.MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+        <TextView
+            android:id="@+id/lblTittle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="20dp"
+            android:text="Kalkulator Sederhana"
+            android:textSize="30dip"
+            android:textStyle="bold" />
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/lblAngkaPetama"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukan Angka Pertama :"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/txtAngkaPertama"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Angka Pertama"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/lblAngkaKedua"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukan Angka Kedua :"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/txtAngkaKedua"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Nilai Kedua"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnJumlah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tambah" />
+
+            <Button
+                android:id="@+id/btnKurang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kurang" />
+
+            <Button
+                android:id="@+id/btnKali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kali" />
+
+            <Button
+                android:id="@+id/btnBagi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bagi" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/lblHasil"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnJumlah"
+            android:layout_marginTop="48dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    </LinearLayout>
+
+</ScrollView>
